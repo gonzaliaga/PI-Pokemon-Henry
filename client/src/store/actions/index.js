@@ -52,7 +52,7 @@ export function getPokemons(){
 
         }) // error del BACK
         .catch(error => {
-            console.log("Error coneccion BACK");
+            console.log("Error conexión BACK");
         });
     }
 }
@@ -75,7 +75,7 @@ export function getTypes(){
             })
         })// cacth generar un dispatch un error
         .catch(error => {
-            console.log("Error coneccion BACK");
+            console.log("Error conexión BACK");
         });        
     }
 }
@@ -117,8 +117,6 @@ export function resetSearchPokemon(){
     }
 }
 
-
-
 //  search by name
 export function searchPokemon(searchName){
     
@@ -127,7 +125,7 @@ export function searchPokemon(searchName){
         .then(response => {
             dispatch({
                 type: SEARCH_POKEMON,
-                payload: response.data, // recibe .... un objeto pokemon 
+                payload: response.data, // recibe un objeto pokemon 
                 });
 
         })// cacth generar un dispatch un error
@@ -209,17 +207,11 @@ export function filterByPokemon(pokemonType){
     }
 };
 
-
-
-
 export function resetDetails(){
     return {
         type: RESET_DETAILS,
     }
 };
-
-
-
 
 export function getPokemonById(id){
     return async function (dispatch){ 
