@@ -28,19 +28,19 @@ export default function Pokemons({pks}){
         {
             ((((pks.length === 0) && notFound && !loadingPokemons ) 
                 || (searchingPokemon && !loadingPokemons && notFound) 
-                || ((pks.length === 0) && searchingPokemon && loadingPokemons && notFound) // condicion para filtro
-                || ( notFoundSearch  && searchingPokemon) // condicion para search not found
+                || ((pks.length === 0) && searchingPokemon && loadingPokemons && notFound) // condición para filtro
+                || ( notFoundSearch  && searchingPokemon) // condición para search not found
                 
             ) ?
                     <div className={styles.container_not_found}>
-                        <img src={pokeball_not_found} className={styles.img_not_found} alt="pokemon not found" />
+                        <img src={pokeball_not_found} className={styles.img_not_found} alt="pokemon no Encontrado" />
                         <h4 className={styles.text_not_found}>No se encontraron resultados.</h4>
                     </div>                       
                 :
 
                 (loadingPokemons && !searchingPokemon)  ?         
                         (<div className={styles.container_loading}>
-                            <img src={imgLoading} className={styles.img_loading} alt="loading" />
+                            <img src={imgLoading} className={styles.img_loading} alt="cargando" />
                             <h4 className={styles.text_loading}>Pokemons loading...</h4>
                         </div>)
                 

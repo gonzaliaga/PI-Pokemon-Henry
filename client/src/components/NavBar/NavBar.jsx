@@ -15,13 +15,13 @@ export default function NavBar() {
                     <div className={styles.menu} >
                         <ul>
                             <li>
-                                <Link to="/pokemons">Home</Link>
+                                <Link to="/pokemons">Inicio</Link>
                             </li>
                             <li>
-                                <Link to="/create">Create</Link>
+                                <Link to="/create">Crear</Link>
                             </li>
                             <li>
-                                <Link to="/about">About</Link>
+                                <Link to="/about">Acerca</Link>
                             </li>
                             
                         </ul>
