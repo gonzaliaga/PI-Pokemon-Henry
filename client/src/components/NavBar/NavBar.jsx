@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../pictures/logo.png";
-import pikachu from "../../pictures/navbar-pikachu.gif";
-import pokemon from "../../pictures/pokemon.png";
+/* import pikachu from "../../pictures/navbar-pikachu.gif"; */
+/* import pokemon from "../../pictures/pokemon.png"; */
 import styles from "./NavBar.module.css";
 
 export default function NavBar() {
@@ -28,8 +28,11 @@ export default function NavBar() {
                     </div>
                 </div>
                 <div className={styles.nav_menu_derecha}>
-                    <img src={pikachu} className={styles.pikachu} alt="Pikachu" />
-                    <img src={pokemon} className={styles.pokemon} alt="Pokémon" />
+                    {/* <img src={pikachu} className={styles.pikachu} alt="Pikachu" /> */}
+                    {/* <img src={pokemon} className={styles.pokemon} alt="Pokémon" /> */}
+                    <span className={styles.navbar_title}>Pokémon App{'\n'}</span>
+                    
+                    <span className={styles.navbar_text}>Atrápalos a Todos!</span>
                 </div>
             </div>
         </div>

@@ -21,7 +21,7 @@ export default function LandingPage() {
     
         <div className="landing">
                 <div>
-                    <span className='landing_title'>Pokemon App</span>
+                    <span className='landing_title'>Pokémon App</span>
                     <span className='landing_text'>
                             Atrápalos a Todos!!!
                     </span>

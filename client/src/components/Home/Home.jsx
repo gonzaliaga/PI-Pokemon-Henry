@@ -13,8 +13,7 @@ export default function Home() {
 
     return (
     <div >
-        <NavBar />
-        
+        <NavBar />  
         <div >
             <div>
                 <div >

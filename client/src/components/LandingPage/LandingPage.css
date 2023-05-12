@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "PokemonSolid";
+  src: url("../fonts/PokemonSolid.ttf") format("truetype");
+}
+
+
 body{
   background-image: linear-gradient(to top, #ffb809, #f8c31e, #f2cd2e, #ebd63e, #e5df4e, #e5e450, #e4ea52, #e3ef55, #e8f349, #edf73b, #f2fa28, #f7fe00);
-  margin: 0px;
+  margin: 0px auto;
   background-attachment: fixed;
 }
 .landing {
@@ -9,7 +15,7 @@ body{
       flex-direction: column-reverse;
       min-height: 100vh;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
       background-image: url("../../pictures/landing_image.jpeg");
       background-size: cover;
       background-position: center;
@@ -19,11 +25,12 @@ body{
  .landing_title{
       display: flex;
       justify-content: center;
-      font-family: "VT323", monospace;
+      font-family: "PokemonSolid", monospace;
       color: white;
-      text-shadow: 2px 2px black;
-      padding-top: 20px;
+      text-shadow: 4px 4px black;
+      padding-top: 5px;
       font-size: calc(2em + 2vw);
+      letter-spacing: 5px;
       text-align: center;
  }
 
@@ -31,11 +38,12 @@ body{
     display: flex;
     justify-content: center;
     width: 15em;
-    font-family: "VT323", monospace;
+    font-family: "PokemonSolid", monospace;
     color: white;
-    text-shadow: 2px 2px black;
-    padding: 10px;
+    text-shadow: 4px 4px black;
+    padding: 5px;
     font-size: calc(1em + 1vw);
+    letter-spacing: 5px;
     text-align: center;
 }
    

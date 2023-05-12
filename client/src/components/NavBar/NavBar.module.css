@@ -1,8 +1,13 @@
+@font-face {
+	font-family: "PokemonSolid";
+	src: url("../fonts/PokemonSolid.ttf") format("truetype");
+}
+
 .nav_bar{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(244, 64, 9);
+    background-color: rgb(9, 146, 244);
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     align-content: space-around;
 	width: 100%;
@@ -34,6 +39,31 @@
 	align-items: center;
     justify-content: center;
 	flex-wrap: wrap;
+}
+.navbar_title{
+	display: flex;
+	justify-content: right;
+	font-family: "PokemonSolid", monospace;
+	color: white;
+	font-weight: 3px blue;
+	text-shadow: 2px 2px black;
+	padding-top: 5px;
+	font-size: 2em;
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+.navbar_text{
+	display: flex;
+	justify-content: center;
+	font-family: "PokemonSolid", monospace;
+	color: rgb(3, 79, 23);
+	font-weight: 3px blue;
+	text-shadow: 2px 2px rgb(161, 243, 144);
+	padding-top: 5px;
+	font-size: 1em;
+	letter-spacing: 2px;
+	text-align: center;
 }
 
 .nav_bar_logo{
