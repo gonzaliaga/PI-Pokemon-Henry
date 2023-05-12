@@ -1,5 +1,5 @@
 import axios from 'axios';
-require('dotenv').config();
+//require('dotenv').config();
 
 // --- URL API PI POKEMONS ---
 const { REACT_APP_URL_API_PI_POKEMONS

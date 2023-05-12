@@ -23,14 +23,15 @@ export default function LandingPage() {
                 <div>
                     <span className='landing_title'>Pokemon App</span>
                     <span className='landing_text'>
-                            discover the feactures of your favorite pokemons
+                            Atrápalos a Todos!!!
                     </span>
                 </div>
                 <div>
                     <Link to="/pokemons">
-                        <button className="waitAnimate">Enter</button>
+                        <button className="waitAnimate">Entrar</button>
                     </Link>
                 </div>
-        </div>    )
+        </div>
+        )
     
 }
