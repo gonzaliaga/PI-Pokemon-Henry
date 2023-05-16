@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
 import styles from "./About.module.css";
-import about from "../../pictures/abaut.webp";
+import about from "../../pictures/ash.png";
 import logo_react from "../../pictures/tecnologias/react.png";
 import logo_redux from "../../pictures/tecnologias/redux.png";
 import logo_express from "../../pictures/tecnologias/express.png";
@@ -15,15 +15,15 @@ class About extends React.Component {
           <NavBar />
           <div className={styles.container_about}>
             <div className={styles.conteiner}>
-                <p className={styles.text_title}>APP POKEMON</p>
+                <p className={styles.text_title}>Pokémon APP</p>
             </div>
             <div className={styles.conteiner_principal}>
                 <div>
-                    <img className={styles.image_principal} src={about} alt="About Main" />
+                    <img className={styles.image_principal} src={about} alt="Acerca de..." />
                 </div>
                 <div>
-                    <p className={styles.text_cita}>"Algunos entrenadores no tienen miedo. Para ellos, este es solo un desafío más. Siguen sus corazones. Eso es lo que los distingue y los convertirá en Maestros Pokémon. Buena suerte a todos ustedes."
-                    <br /><br />-Miranda.<br /><br />
+                    <p className={styles.text_cita}>"Las circunstancias en las que uno nace no tienen importancia, es lo que uno hace con el don de la vida lo que nos dice quiénes somos."
+                    <br /><br />-Mewtwo.<br /><br />
 
                     </p>            
                 </div>
@@ -33,11 +33,11 @@ class About extends React.Component {
                 Los datos se extraen de la API de <a href="https://pokeapi.co/" target="blanc" alt="pokeapi">https://pokeapi.co/</a>. Para el desarrollo de la app utlicé las siguientes tecnologias:
                 </p>
                 <p className={styles.text}>                               
-                JavaScript -
+                    JavaScript -
                     React -    
                     Redux -
                     HTML -
-                    CSS -<br />
+                    CSS -
                     Node.js -
                     Express.js -
                     Sequelize -
@@ -45,13 +45,13 @@ class About extends React.Component {
                     </p>
                     <p className={styles.text}> 
 
-Las caracteristicas del proyecto son las siguientes:<br />
-Busca pokémon por nombre.<br />
-Filtrar por tipos y por origen de la información.<br />
-Cada Card en la página de inicio muestra un Pokémon y al hacer clic en la misma puedes ver los detalles.<br />
-Ordenar alfabéticamente y por nivel de ataque.<br />
-Crear un nuevo Pokémon llenando el formulario.<br />
-                <br /><br />Gerardo. </p>
+                        Las caracteristicas del proyecto son las siguientes:<br />
+                        Busca pokémon por nombre.<br />
+                        Filtrar por tipos y por origen de la información.<br />
+                        Cada Card en la página de inicio muestra un Pokémon y al hacer clic en la misma puedes ver los detalles.<br />
+                        Ordenar alfabéticamente y por nivel de ataque.<br />
+                        Crear un nuevo Pokémon llenando el formulario.<br />
+                <br /><br />Gonzalo Cuellar Aliaga</p>
             </div>
             <div className={styles.conteiner_tecnologias}>
                 <img className={styles.image_tecnologias} src={logo_react} alt="react" />

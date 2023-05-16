@@ -2,122 +2,115 @@
   font-family: "PokemonSolid";
   src: url("../fonts/PokemonSolid.ttf") format("truetype");
 }
-
-
-body{
-  background-image: linear-gradient(to top, #ffb809, #f8c31e, #f2cd2e, #ebd63e, #e5df4e, #e5e450, #e4ea52, #e3ef55, #e8f349, #edf73b, #f2fa28, #f7fe00);
-  margin: 0px auto;
-  background-attachment: fixed;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PokemonSolid", monospace;
+  
 }
-.landing {
-      display: flex;
-      flex-direction: row;
-      flex-direction: column-reverse;
-      min-height: 100vh;
-      align-items: center;
-      justify-content: space-around;
-      background-image: url("../../pictures/landing_image.jpeg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
- }
 
- .landing_title{
-      display: flex;
-      justify-content: center;
-      font-family: "PokemonSolid", monospace;
-      color: white;
-      text-shadow: 4px 4px black;
-      padding-top: 5px;
-      font-size: calc(2em + 2vw);
-      letter-spacing: 5px;
-      text-align: center;
- }
-
- .landing_text{
-    display: flex;
-    justify-content: center;
-    width: 15em;
-    font-family: "PokemonSolid", monospace;
-    color: white;
-    text-shadow: 4px 4px black;
-    padding: 5px;
-    font-size: calc(1em + 1vw);
-    letter-spacing: 5px;
-    text-align: center;
+.main {
+  width: 100%;
+  height: 100vh;
 }
-   
-    
 
+video {
+  
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  object-fit: cover;
+}
 
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 
-.waitAnimate {
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+}
 
-  font-family: "vt323", monospace;
-  font-size: 2rem;
-  font-weight:bold;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #cc9f52;
+.titulo{
+  display:flex;
+  justify-content: center;
+  font-family: "PokemonSolid", monospace;
+  color: white;
+  text-shadow: 4px 4px black;
+  padding-top: 0px;
+  font-size: calc(4em + 2vw);
+  letter-spacing: 5px;
+  text-align: center;
+}
 
-  box-shadow:inset 0px 1px 0px 0px #fce2c1;
-  background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
-  background-color:#ffc477;
-  border-radius:6px;
-  border:1px solid #eeb44f;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff; 
-  padding:17px 24px;
+.texto{
+display: flex;
+justify-content: center;
+width: 15em;
+font-family: "PokemonSolid", monospace;
+color: white;
+text-shadow: 4px 4px black;
+padding: 10px;
+font-size: calc(1em + 1vw);
+letter-spacing: 2px;
+text-align: center;
+}
+
+.waitAnimate{
+  width: 150px;
+  height: 75px;
+  background-color: rgba(208, 98, 24, 0.4);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size:2em;
+  font-style: bold;
+  text-align: center;
+  color: black; 
 
 }
 
 .waitAnimate:hover {
-    background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
-    background-color:#fb9e25;
-    transform: translateY(-6px);
-    transition-duration: 0.3s;
-    animation: 1.5s mover-caja infinite;
+  background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+  background-color:#fb9e25;
+  transform: translateY(-6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-caja infinite;
 
-  }
-  .waitAnimate:active {
-    position:relative;
-    top:1px;
-  }
+}
+.waitAnimate:active {
+  position:relative;
+  top:1px;
 
-
-  .weaitAnimate:before{
-    content: '';
-    width: 90%;
-    height: 20px;
-    top: 100%;
-    left: 5%;
-    position: absolute;
-    opacity: 0;
-    background: radial-gradient(ellipse, 
-    rgba(0,0,0,0.35) 0%, 
-    rgba(0,0,0,0) 80%);
-  }
-  .waitAnimate:hover:before{
-    opacity: 1;
-    transform: translateY(6px);
-    transition-duration: 0.3s;
-    animation: 1.5s mover-sombra infinite;
-  }
-  
-  @keyframes mover-caja{ 
-    50%{ 
-      transform: translateY(-10px);
-    } 
-  }
-  @keyframes mover-sombra{
-    50%{
-      opacity: 1;
-      transform: translateY(10px) scale(0.9)
-    }
-  }
-  
-  
-      
+}
 
 
-
+.weaitAnimate:before{
+  content: '';
+  width: 90%;
+  height: 20px;
+  top: 100%;
+  left: 5%;
+  position: absolute;
+  opacity: 0;
+  background: radial-gradient(ellipse, 
+  rgba(0,0,0,0.35) 0%, 
+  rgba(0,0,0,0) 80%);
+}
+.waitAnimate:hover:before{
+  opacity: 1;
+  transform: translateY(6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-sombra infinite;
+}

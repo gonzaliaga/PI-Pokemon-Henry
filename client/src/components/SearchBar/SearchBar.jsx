@@ -51,8 +51,8 @@ export default function SearchBar(){
             <div>
                 {      <div className={style.search_bar_subconteiner}>
                             <form className={style.form_search_bar} onSubmit={onSubmit}>
-                                <input className={style.searchbar_input_text} type="text" value={search} onChange={onInputChange} placeholder="Enter Pokemon to search"/>
-                                <button className={style.searchbar_input_submit} type="submit" >Search</button>
+                                <input className={style.searchbar_input_text} type="text" value={search} onChange={onInputChange} placeholder="Ingresa el Pokémon a BUSCAR"/>
+                                <button className={style.searchbar_input_submit} type="submit" >Buscar</button>
                                 <img className={style.searchbar_input_lupa} src={lupa} alt="lupa"/>
                             </form>
                         </div>

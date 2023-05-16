@@ -1,4 +1,4 @@
-.container_about{
+/* .container_about{
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-}
+} */
 
 
 .conteiner{
@@ -20,7 +20,7 @@
 }
 
 .conteiner_tecnologias{
-    display: flex;
+    display: flexbox;
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
@@ -52,8 +52,9 @@
 
   .text_cita{
     font-size: .8rem;
-    font-weight: bold;
-    font-family: 'VT323', monospace;
+    font-weight:bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
     padding: 20px 20px 25px 20px;
     color: hsl(0, 0%, 0%);
   }

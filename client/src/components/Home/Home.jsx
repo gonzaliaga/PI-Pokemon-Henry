@@ -13,7 +13,7 @@ export default function Home() {
 
     return (
     <div >
-        <NavBar />  
+        <NavBar sticky="top" />
         <div >
             <div>
                 <div >
